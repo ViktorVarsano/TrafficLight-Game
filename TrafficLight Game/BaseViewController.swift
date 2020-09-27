@@ -19,7 +19,8 @@ class BaseViewController: UIViewController {
     
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
-      updateCounter()
+        timerInt = 14
+        updateCounter()
         }
     
     var timer = Timer()
@@ -66,6 +67,8 @@ class BaseViewController: UIViewController {
           startButtonTapped()
                         
     }
+    
+    
     @objc func updateCounter() {
         
         timerInt -= 1
@@ -91,8 +94,13 @@ class BaseViewController: UIViewController {
         }
         
   }
+    
+    
+    
+           
+       }
      // refactoring is preferred I am going to refactor this if needed
     
-}
+
 
 
